@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  start_date: 2011-05-11
+  decision_date: 2011-05-11
+  filename: MyString
+  company: MyString
+  comment: MyText
+  state: MyString
+  average: 1.5
+  description: MyText
+
+two:
+  name: MyString
+  start_date: 2011-05-11
+  decision_date: 2011-05-11
+  filename: MyString
+  company: MyString
+  comment: MyText
+  state: MyString
+  average: 1.5
+  description: MyText

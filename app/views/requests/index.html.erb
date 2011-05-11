@@ -1,0 +1,10 @@
+<table border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <th>Nombre</th><th>Compañía</th>
+  </tr>
+  <% for request in @requests %>
+    <tr>
+      <td><%= request.name %></td><td><%= request.company %></td>
+    </tr>
+  <% end -%>
+</table>
