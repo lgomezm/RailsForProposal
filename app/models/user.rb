@@ -1,4 +1,4 @@
-class Request < ActiveRecord::Base
+class User < ActiveRecord::Base
   
   has_many :section_roles
   
