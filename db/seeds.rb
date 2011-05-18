@@ -9,5 +9,5 @@
 sections = ['Jurídica', 'Contractual', 'Financiera', 'Técnica']
 
 sections.each do |section|
-  Section.find_or_create_by_name(sectionaisuisaudsai)
+  Section.find_or_create_by_name(section)
 end
