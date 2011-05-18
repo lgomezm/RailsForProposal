@@ -1,0 +1,13 @@
+<%= semantic_form_for @request do |form| %>
+  <%= form.inputs do %>
+    <%= form.input :name, :label => "Nombre" %>
+    <%= form.input :description, :label => "Descripción" %>
+    <%= form.input :company, :label => "Compañía" %>
+    <%= form.input :start_date, :label => "Fecha de inicio" %>
+    <%= form.input :decision_date, :label => "Fecha de decisión" %>
+    <%= form.input :filename, :label => "Archivo", :as => :file %>
+  <% end -%>
+  <%= form.buttons do %>
+    <%= form.commit_button "Registrar" %>
+  <% end -%>
+<% end -%>

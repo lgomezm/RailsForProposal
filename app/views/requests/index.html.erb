@@ -1,10 +1,23 @@
 <table border="0" cellspacing="5" cellpadding="5">
   <tr>
-    <th>Nombre</th><th>Compañía</th>
+    <th>Nombre</th>
+    <th>Compañía</th>
+    <th>Descripción</th>
+    <th>Comentario</th>
+    <th>Promedio</th>
+    <th>Archivo</th>
   </tr>
   <% for request in @requests %>
     <tr>
-      <td><%= request.name %></td><td><%= request.company %></td>
+      <td><%= request.name %></td>
+      <td><%= request.company %></td>
+      <td><%= request.description %></td>
+      <td><%= request.comment %></td>
+      <td><%= request.average %></td>
+      <td><%= link_to request.filename %></td>
+      <td><%= link_to "Ver", request_path(request)%></td>
     </tr>
   <% end -%>
 </table>
+
+<%= link_to "Nuevo RFP", new_request_path %>
