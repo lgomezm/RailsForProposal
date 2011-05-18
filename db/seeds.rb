@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+sections = ['Jurídica', 'Contractual', 'Financiera', 'Técnica']
+
+sections.each do |section|
+  Section.find_or_create_by_name(section)
+end
